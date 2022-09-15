@@ -1,0 +1,9 @@
+.Weather {
+  background: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #afb0b1;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 600px;
+}
