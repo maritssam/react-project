@@ -7,3 +7,56 @@
   padding: 15px;
   max-width: 600px;
 }
+
+.Weather h1 {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 300;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.Weather .daily-info {
+  margin-top: 0px;
+  padding-left: 12px;
+}
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  color: #c5edf7;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.Weather img {
+  display: inline-block;
+  height: 64px;
+  margin-top: 15px;
+}
+
+.Weather .temperature {
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 64px;
+  position: relative;
+  top: 20px;
+}
+
+.Weather .units {
+  color: #ffffff;
+  position: relative;
+  top: -5px;
+}
+
+.Weather .units a {
+  text-decoration: none;
+  color: #c5edf7;
+}
