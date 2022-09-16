@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
+
+export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({});
     function handleResponse(response) {
+        console.log(response.data)
         setWeatherData({
             temperature: response.data.main.temp,
             city: response.data.name,
+            date: new Date(response.data.dt * 1000),
             description: response.data.weather[0].description,
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed,
@@ -16,9 +20,7 @@ export default function Weather() {
 
     }
 
-
-
-    const apiKey = "41653189222a9f622e0f370d2ef32efe";
+    const apiKey = "bc2cd97eaa209e7d22d8f3c84081655f";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=San Jose&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 
@@ -38,8 +40,8 @@ export default function Weather() {
             <div className="row">
                 <h1>{weatherData.city}</h1>
                 <ul className="daily-info">
-                    <li>Thursday 4:30</li>
-                    <li className="text-capitalize">{weatherData.description}</li>
+                    <li> <FormattedDate date={weatherData.date} /></li>
+                    <li className="text-capitalize"> {weatherData.description}</li>
                 </ul>
             </div>
             <div className="row">
