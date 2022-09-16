@@ -36,24 +36,27 @@
   list-style: none;
 }
 
-.Weather img {
+.Weather .img {
   display: inline-block;
   height: 64px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .Weather .temperature {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 62px;
   line-height: 64px;
   position: relative;
-  top: 20px;
+  top: -10px;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .Weather .units {
   color: #ffffff;
+  font-size: 18px;
   position: relative;
-  top: -5px;
+  top: -45px;
 }
 
 .Weather .units a {
