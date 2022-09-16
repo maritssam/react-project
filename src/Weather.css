@@ -39,24 +39,23 @@
 .Weather .img {
   display: inline-block;
   height: 64px;
-  margin-top: 20px;
+  margin: 10px;
 }
 
 .Weather .temperature {
   color: #ffffff;
   font-size: 62px;
   line-height: 64px;
+  margin-left: 5px;
   position: relative;
   top: -10px;
-  margin-left: 0px;
-  padding-left: 0px;
 }
 
 .Weather .units {
   color: #ffffff;
   font-size: 18px;
   position: relative;
-  top: -45px;
+  top: -40px;
 }
 
 .Weather .units a {
