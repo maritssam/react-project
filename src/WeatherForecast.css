@@ -4,10 +4,8 @@
 
 .Weather-Forecast .WeatherForecast-day {
   color: #ffffff;
-}
-
-.Weather-Forecast .WeatherForecast-temperature {
-    margin-top: -25px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .Weather-Forecast .WeatherForecast-max {

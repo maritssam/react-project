@@ -4,7 +4,7 @@
   border: 1px solid #afb0b1;
   border-radius: 5px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 20px;
   max-width: 600px;
 }
 
@@ -36,16 +36,17 @@
   list-style: none;
 }
 
-.Weather .img {
+.Weather canvas {
   display: inline-block;
-  height: 64px;
-  margin: 10px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .Weather .temperature {
   color: #ffffff;
   font-size: 64px;
   line-height: 64px;
+  margin-left: 5px;
   position: relative;
   top: -10px;
 }
@@ -54,7 +55,8 @@
   color: #ffffff;
   font-size: 18px;
   position: relative;
-  top: -40px;
+  top: -50px;
+  margin-left: -5px;
 }
 
 .Weather .units a {
